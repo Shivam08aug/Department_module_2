@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title > MSC-MATHS Department </title>
+	<link rel="stylesheet" type="text/css" href="MSC-MATHS.css">
+</head>
+<body>
+	<div id = "div1">
+		<span id="span1"> NATIONAL INSTITUTE OF TECHNOLOGY </span> <img src="nit.png" height="150" align="centre" style="background-color:white;"> <span id="span2"> राष्ट्रीय प्रौद्योगिकी संस्थान <br> <span align : right> जमशेदपुर    </span> </span> <br> JAMSHEDPUR
+	</div>
+	<h1  id="course"> MSC-MATHS </h1>
+
+	<h2 align="left" id="h21" > Select Faculty from dropdown </h2>
+		<form id = "f1" method="POST" action="mailto:billionaresourabh@gmail.com" enctype="text/plain" onsubmit="saveData()" >
+		<span id="a">
+		<select class="form-control" id="s1" name="faculty_select" size="10" onchange ="updateSub(this.id)"  >
+			<option value="none"> None </option>
+			<option value="Dr. Sunil Kumar"> Dr. Sunil Kumar</option>
+			<option value="Prof. Tarni Mandal">Prof. Tarni Mandal </option>
+			<option value="Dr. Ramayan Singh"> Dr. Ramayan Singh</option>
+			<option value="Dr. Sripati Jha"> Dr. Sripati Jha </option>
+			<option value="Dr. Hari Shankar Prasad"> Dr. Hari Shankar Prasad </option>
+			<option value="Dr. Mahendra Kumar Gupta ">Dr. Mahendra Kumar Gupta</option>
+			<option value="Dr. Ratnesh Kumar Mishra"> Dr. Ratnesh Kumar Mishra </option>
+			<option value="Dr. Rajat Tripathi"> Dr. Rajat Tripathi </option>
+		</select>
+
+		<span id="b"> <h4> Semester 1st </h4>
+		  <input type="checkbox" id="sem1s1" name="Linear Algebra" value="MA3101" onclick="updateSub(this.id)" >
+		  <label for="sem1s1"> Linear Algebra</label><br>
+		  <input type="checkbox" id="sem1s2" name="Real Analysis " value="MA3102" onclick="updateSub(this.id)">
+		  <label for="sem1s2">Real Analysis </label><br>
+		  <input type="checkbox" id="sem1s3" name=" Probability and Statistics " value="MA3103" onclick="updateSub(this.id)">
+		  <label for="sem1s3">  Probability and Statistics  </label><br>
+		  <input type="checkbox" id="sem1s4" name="Ordinary Differential Equations" value="MA3104" onclick="updateSub(this.id)">
+		  <label for="sem1s4">Ordinary Differential Equations</label><br>
+		  <input type="checkbox" id="sem1s5" name="C-Programming & Lab " value="MA3105" onclick="updateSub(this.id)">
+		  <label for="sem1s5"> C-Programming & Lab  </label><br>
+		  <br>
+	  </span>
+
+
+      <span id="c"> <h4> Semester 2nd </h4>
+	<input type="checkbox" id="sem2s1" name="Complex Analysis " value="MA3201" onclick="updateSub(this.id)" >
+		  <label for="sem2s1"> Complex Analysis </label><br>
+	<input type="checkbox" id="sem2s2" name="Numerical Analysis & Lab " value="MA3202" onclick="updateSub(this.id)">
+		  <label for="sem2s2"> Numerical Analysis & Lab </label><br>
+		  <input type="checkbox" id="sem2s3" name="Abstract Algebra" value="MA3203" onclick="updateSub(this.id)">
+		  <label for="sem2s3"> Abstract Algebra  </label><br>
+		  <input type="checkbox" id="sem2s4" name="Partial Differential Equations " value="MA3203" onclick="updateSub(this.id)">
+		  <label for="sem2s4"> Partial Differential Equations</label><br>
+		  <input type="checkbox" id="sem2s5" name="Measure Theory and Integration " value="MA3204" onclick="updateSub(this.id)">
+		  <label for="sem2s5"> Measure Theory and Integration </label><br>
+	  </span>
+
+	  <span id="d"> <h4> Semester 3 </h4>
+		<input type="checkbox" id="sem3s1" name=" Topology" value="MA3301" onclick="updateSub(this.id)" >
+		  <label for="sem3s1">  Topology </label><br>
+		  <input type="checkbox" id="sem3s2" name="Operations Research" value="MA3302" onclick="updateSub(this.id)">
+		  <label for="sem3s2"> Operations Research </label><br>
+		  <input type="checkbox" id="sem3s3" name="Mathematical Methods" value="MA3303" onclick="updateSub(this.id)">
+		  <label for="sem3s3"> Mathematical Methods </label><br>
+		  <input type="checkbox" id="sem3s4" name="Elective - I " value="MA330X" onclick="updateSub(this.id)">
+		  <label for="sem3s4"> Elective - I  </label><br>
+		  <input type="checkbox" id="sem3s5" name="Elective - II" value="MA330X" onclick="updateSub(this.id)">
+		  <label for="sem3s5"> Elective - II </label><br>
+		</span>
+
+	  <span id="e"> <h4> Semester 4 </h4>
+		  <input type="checkbox" id="sem4s1" name="Functional Analysis" value="MA3401" onclick="updateSub(this.id)" >
+		  <label for="sem4s1"> Functional Analysis </label><br>
+		  <input type="checkbox" id="sem4s2" name="elective-I" value="MA340X" onclick="updateSub(this.id)" >
+		  <label for="sem4s2"> elective-I </label><br>
+		  <input type="checkbox" id="sem4s3" name="elective-II" value="MA340X" onclick="updateSub(this.id)" >
+		  <label for="sem4s3"> elective-II </label><br>
+		  <input type="checkbox" id="sem4s4" name="Project" value="MA3405" onclick="updateSub(this.id)" >
+		  <label for="sem4s4"> Project</label><br>
+
+
+	  </span>
+
+	  <br>
+
+	  <button type="submit"  id="b1" > Submit </button>
+
+	</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="MSC-MATHS.js">
+
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title > MTECH-ISSE Department </title>
+	<link rel="stylesheet" type="text/css" href="MTECH-ISSE.css">
+</head>
+<body>
+	<div id = "div1">
+		<span id="span1"> NATIONAL INSTITUTE OF TECHNOLOGY </span> <img src="nit.png" height="150" align="centre" style="background-color:white;"> <span id="span2"> राष्ट्रीय प्रौद्योगिकी संस्थान <br> <span align : right> जमशेदपुर    </span> </span> <br> JAMSHEDPUR
+	</div>
+	<h1  id="course">MTECH</h1>
+
+	<h2 align="left" id="h21" > Select Faculty from dropdown </h2>
+	<form id = "f1" method="POST" action="mailto:billionaresourabh@gmail.com" enctype="text/plain" onsubmit="saveData()" >
+		<span id="a">
+		<select class="form-control" id="s1" name="faculty_select" size="10" onchange="updateSub(this.id)"  >
+			<option value="none"> None </option>
+			<option value="Alekha_Kumar_Mishra"> Alekha Kumar Mishra </option>
+			<option value="Chandra_Shekhar_Azad"> Chandra Shekhar Azad </option>
+			<option value="Dilip_Kumar_Shaw"> Dilip Kumar Shaw </option>
+			<option value="Danish_Ali_Khan"> Danish Ali Khan </option>
+			<option value="BPradhan"> B. Pradhan </option>
+			<option value="Mudassir_Rafi"> Mudassir Rafi </option>
+			<option value="DKYadav"> D.K Yadav </option>
+			<option value="Ashok_Kumar_Mehta"> A.K Mehta </option>
+		</select>
+
+		<span id="b"> <h4> Semester 1st </h4>
+		  <input type="checkbox" id="sem1s1" name="Information Security" value="CA4101" onclick="updateSub(this.id)" >
+		  <label for="sem1s1"> Information Security</label><br>
+		  <input type="checkbox" id="sem1s2" name="Cryptographic Foundation" value="CA4102" onclick="updateSub(this.id)">
+		  <label for="sem1s2">Cryptographic Foundation</label><br>
+		  <input type="checkbox" id="sem1s3" name="Design of Computer Network" value="CA4103" onclick="updateSub(this.id)">
+		  <label for="sem1s3"> Design of Computer Network </label><br>
+		  <input type="checkbox" id="sem1s4" name="Algorithms" value="CA4104" onclick="updateSub(this.id)">
+		  <label for="sem1s4">Algorithms</label><br>
+		  <input type="checkbox" id="sem1s5" name="elective" value="CA4105" onclick="updateSub(this.id)">
+		  <label for="sem1s5"> Elective </label><br>
+		  <br>
+	  </span>
+
+
+      <span id="c"> <h4> Semester 2nd </h4>
+	<input type="checkbox" id="sem2s1" name="database security" value="CA4201" onclick="updateSub(this.id)" >
+		  <label for="sem2s1"> Database Security</label><br>
+	<input type="checkbox" id="sem2s2" name="network security" value="CA4202" onclick="updateSub(this.id)">
+		  <label for="sem2s2"> Network Security</label><br>
+		  <input type="checkbox" id="sem2s3" name="Software Security Engineering" value="CA4203" onclick="updateSub(this.id)">
+		  <label for="sem2s3"> Software Security Engineering  </label><br>
+		  <input type="checkbox" id="sem2s4" name="cyber laws " value="CA4204" onclick="updateSub(this.id)">
+		  <label for="sem2s4"> Cyber Laws and Security </label><br>
+		  <input type="checkbox" id="sem2s5" name="elective" value="CA4205" onclick="updateSub(this.id)">
+		  <label for="sem2s5"> elective </label><br>
+
+		  <br>
+	  </span>
+
+	  <span id="d"> <h4> Semester 3 </h4>
+		<input type="checkbox" id="sem3s1" name="desserition-I" value="CA4301" onclick="updateSub(this.id)" >
+		  <label for="sem3s1"> Disseration-I </label><br>
+		  <input type="checkbox" id="sem3s2" name="ob" value="CA4302" onclick="updateSub(this.id)">
+		  <label for="sem3s2"> Seminar </label><br>
+
+		</span>
+
+	  <span id="e"> <h4> Semester 4 </h4>
+		<input type="checkbox" id="sem4s1" name="desserition-II" value="MA3201" onclick="updateSub(this.id)" >
+		  <label for="sem4s1"> Desserition </label><br>
+
+	  </span>
+
+	  <br>
+
+	  <button type="submit"  id="b1" > Submit </button>
+
+	</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="MTECH-ISSE.js">
+
+	</script>
+</body>
+
+
+</html>

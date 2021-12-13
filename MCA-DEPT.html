@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title >  MCA - Department </title>
+	<link rel="stylesheet" type="text/css" href="MCA-DEPT-CSS.css">
+</head>
+<body>
+	<div id = "div1" >
+		<span id="span1"> NATIONAL INSTITUTE OF TECHNOLOGY </span> <img src="nit.png" height="150" align="centre"
+		style="background-color:white;">  </span> <br> JAMSHEDPUR
+	</div>
+    <h1  id="course"> MCA </h1>
+	<h2 align="left" id="h21" > Select Faculty from dropdown </h2>
+
+	<form  method="POST" action="mailto:billionaresourabh@gmail.com" enctype="text/plain" id="f1" onsubmit="saveData()"  >
+		<span id="a">
+		<select class="form-control" id="s1" name="faculty_select" size="10" onchange ="updateSub(this.id)"  >
+			<option value="none" id="1"> None </option>
+			<option value="Alekha_Kumar_Mishra" id="2"  > Alekha Kumar Mishra </option>
+			<option value="Chandra_Shekhar_Azad" id="3"> Chandra Shekhar Azad </option>
+			<option value="Dilip_Kumar_Shaw" id="4"> Dilip Kumar Shaw </option>
+			<option value="Danish_Ali_Khan" id="5"> Danish Ali Khan </option>
+			<option value="Budhdev_Pradhan" id="6"> B. Pradhan </option>
+			<option value="Mudassir_Rafi" id="7"> Mudassir Rafi </option>
+			<option value="D_K_Yadav" id="8"> D.K Yadav </option>
+			<option value="Ashok_Kumar_Mehta" id="9"> A.K Mehta </option>
+		</select>
+	  </span>
+
+		<span id="c"> <h4> Semester 1st </h4>
+		  <input type="checkbox" id="sem1s1" name=" Computer Programming and problem solving using c" value="CA3101" onclick="updateSub(this.id)" >
+		  <label for="sem1s1"> Computer Programming and problem solving using c</label><br>
+		  <input type="checkbox" id="sem1s2" name="Computer Organization and Architecture" value="CA3102" onclick="updateSub(this.id)">
+		  <label for="sem1s2"> Computer Organization and Architecture</label><br>
+		  <input type="checkbox" id="sem1s3" name="Resource Management and Technique" value="CA3103" onclick="updateSub(this.id)">
+		  <label for="sem1s3"> Resource Management and Technique </label><br>
+		  <input type="checkbox" id="sem1s4" name="Mathematical Foundation of Computer" value="MA3104" onclick="updateSub(this.id)">
+		  <label for="sem1s4"> Mathematical Foundation of Computer</label><br>
+		  <input type="checkbox" id="sem1s5" name="Probability and Statical Computing" value="MA3103" onclick="updateSub(this.id)">
+		  <label for="sem1s5"> Probability and Statical Computing</label><br>
+		  <input type="checkbox" id="sem1sem1s6" name="c lab" value="CA3104" onclick="updateSub(this.id)">
+		  <label for="sem1s6"> C Lab </label><br>
+
+		  <br>
+	</span>
+
+      <span id="b"> <h4> Semester 3rd </h4>
+		  <input type="checkbox" id="sem3s1" name="Database Management System" value="CA3301" onclick="updateSub(this.id)" >
+		  <label for="sem3s1"> Database Management System</label><br>
+		  <input type="checkbox" id="sem3s2" name="Computer Communication and Networks" value="CA3302" onclick="updateSub(this.id)">
+		  <label for="sem3s2"> Computer Communication and Networks</label><br>
+		  <input type="checkbox" id="sem3s3" name="Design And Analysis of Algorithm " value="CA3303" onclick="updateSub(this.id)">
+		  <label for="sem3s3"> Design And Analysis of Algorithm </label><br>
+		  <input type="checkbox" id="sem3s4" name="Computer Graphics" value="CA3304" onclick="updateSub(this.id)">
+		  <label for="sem3s4"> Computer Graphics </label><br>
+		  <input type="checkbox" id="sem3s5" name="java" value="CA3305" onclick="updateSub(this.id)">
+		  <label for="sem3s5"> JAVA </label><br>
+		  <input type="checkbox" id="sem3s6" name="dbms lab" value="CA3306" onclick="updateSub(this.id)">
+		  <label for="sem3s6"> Database Management System Lab </label><br>
+		  <input type="checkbox" id="sem3s7" name="Computer Graphics and Java lab" value="CA3307" onclick="updateSub(this.id)">
+		  <label for="sem3s7"> Computer Graphics and Java lab</label><br>
+		  <br>
+	  </span>
+
+	  <span id="d"> <h4> Semester 5th </h4>
+		<input type="checkbox" id="sem5s1" name="Fanancial Management" value="HS3501" onclick="updateSub(this.id)" >
+		  <label for="sem5s1"> Fanancial Management </label><br>
+		  <input type="checkbox" id="sem5s2" name="Organizational Behaviour and Management" value="HS3502" onclick="updateSub(this.id)">
+		  <label for="sem5s2"> Organizational Behaviour and Management</label><br>
+		  <input type="checkbox" id="sem5s3" name="UNIX" value="CA3501" onclick="updateSub(this.id)">
+		  <label for="sem5s3"> UNIX and Shell Programming </label><br>
+		  <input type="checkbox" id="sem5s4" name="pattern" value="CA3502" onclick="updateSub(this.id)">
+		  <label for="sem5s4"> Pattern Recognization  </label><br>
+		  <input type="checkbox" id="sem5s5" name="python Recognization" value="CA3503" onclick="updateSub(this.id)">
+		  <label for="sem5s5"> Python Programming </label><br>
+		  <input type="checkbox" id="sem5s6" name="unix lab" value="CA3504" onclick="updateSub(this.id)">
+		  <label for="sem5s6"> Unix Lab </label><br>
+		  <input type="checkbox" id="sem5s7" name="pyhton lab" value="CA3505" onclick="updateSub(this.id)">
+		  <label for="sem5s7"> Python lab</label><br>
+		  <br>
+	  </span>
+
+
+	   <button type="submit" id="b1"  > Submit </button>
+	   <!--<input type="radio" id="r1" onchange="saveData()" >  -->
+
+
+	  <span id="e"> <h4> Semester 2th </h4>
+		<input type="checkbox" id="sem2s1" name="Numerical Methods" value="MA3201"  onclick="updateSub(this.id)">
+		  <label for="sem5s1"> Numerical Methods </label><br>
+		  <input type="checkbox" id="sem2s2" name="Object Oriented Programming using c++" value="CA3201" onclick="updateSub(this.id)">
+		  <label for="sem2s2"> Object Oriented Programming using c++</label><br>
+		  <input type="checkbox" id="sem2s3" name="Data Structures" value="CA3202" onclick="updateSub(this.id)">
+		  <label for="sem2s3"> Data Structures </label><br>
+		  <input type="checkbox" id="sem2s4" name="Object Oriented Analysis and Design" value="CA3203" onclick="updateSub(this.id)">
+		  <label for="sem2s4"> Object Oriented Analysis and Design  </label><br>
+		  <input type="checkbox" id="sem2s5" name="Operating System" value="CA3204" onclick="updateSub(this.id)">
+		  <label for="sem2s5"> Operating System </label><br>
+		  <input type="checkbox" id="sem2s6" name="c++ lab" value="CA3205" onclick="updateSub(this.id)">
+		  <label for="sem2s6"> C++ Lab </label><br>
+		  <input type="checkbox" id="sem2s7" name="ds lab" value="CA3206" onclick="updateSub(this.id)">
+		  <label for="sem2s7"> DS lab</label><br>
+		  <br>
+	  </span>
+
+	   <span id="f"> <h4> Semester 4th </h4>
+		<input type="checkbox" id="sem4s1" name="Software Engineering" value="CA3401" onclick="updateSub(this.id)" >
+		  <label for="sem4s1"> Software Engineering </label><br>
+		  <input type="checkbox" id="sem4s2" name="Artificial Intelligen" value="CA3402" onclick="updateSub(this.id)">
+		  <label for="sem4s2"> Artificial Intelligence </label><br>
+		  <input type="checkbox" id="sem4s3" name="Internet and Web Technolog" value="CA3403" onclick="updateSub(this.id)">
+		  <label for="sem4s3"> Internet and Web Technology  </label><br>
+		  <input type="checkbox" id="sem4s4" name="elec-1" value="CA3404" onclick="updateSub(this.id)">
+		  <label for="sem4s4"> Elective-1  </label><br>
+		  <input type="checkbox" id="sem4s5" name="Elective-1" value="CA3405" onclick="updateSub(this.id)">
+		  <label for="sem4s5"> Elective-2 </label><br>
+		  <input type="checkbox" id="sem4s6" name="Web Technology Lab" value="CA3406" onclick="updateSub(this.id)">
+		  <label for="sem4s6"> Web Technology Lab  </label><br>
+		  <input type="checkbox" id="sem4s7" name="elective - lab" value="CA3407" onclick="updateSub(this.id)">
+		  <label for="sem4s7"> Elective Lab </label><br>
+		  <br>
+	  </span>
+
+	  <span id="g"> <h4> Semester 6th </h4>
+		<input type="checkbox" id="sem6Th" name="Thesis / Project / Industrial Project" value="CA3601" onclick="updateSub(this.id)" >
+		  <label for="sem6Th"> Thesis / Project / Industrial Project </label><br>
+
+	  </span>
+
+	</form>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	 <script type="text/javascript" src="MCA-DEPT-JS.js">
+
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title > MSC-CHEMISTRY Department </title>
+	<link rel="stylesheet" type="text/css" href="MSC-CHEMISTRY.css">
+</head>
+<body>
+	<div id = "div1">
+		<span id="span1"> NATIONAL INSTITUTE OF TECHNOLOGY </span> <img src="nit.png" height="150" align="centre" style="background-color:white;"> <span id="span2"> राष्ट्रीय प्रौद्योगिकी संस्थान <br> <span align : right> जमशेदपुर    </span> </span> <br> JAMSHEDPUR
+	</div>
+	<h1  id="course"> MSC-CHEMISTRY </h1>
+
+	<h2 align="left" id="h21" > Select Faculty from dropdown </h2>
+	<form id = "f1" method="POST" action="mailto:billionaresourabh@gmail.com" enctype="text/plain" onsubmit="saveData()" >
+		<span id="a">
+		<select class="form-control" id="s1" name="faculty_select" size="10" onchange ="updateSub(this.id)"  >
+			<option value="none"> None </option>
+			<option value="Dr. Balram Ambade"> Dr. Balram Ambade</option>
+			<option value="Dr. Shailesh Kumar Prasad"> Dr. Shailesh Kumar Prasad </option>
+			<option value="Dr. Moumita Mondal"> Dr. Moumita Mondal</option>
+			<option value="Dr. Sekarpandi Sakthivel"> Dr. Sekarpandi Sakthivel </option>
+			<option value="Dr. Prabhat Kumar"> Dr. Prabhat Kumar </option>
+			<option value="Dr. Tapas Das ">Dr. Tapas Das</option>
+			<option value="Dr. Subrata Mahanta"> Dr. Subrata Mahanta </option>
+			<option value="Dr. Sudhanshu Shekhar Pati"> Dr. Sudhanshu Shekhar Pati </option>
+		</select>
+
+		<span id="b"> <h4> Semester 1st </h4>
+		  <input type="checkbox" id="sem1s1" name="Thermodynamics and Electrochemistry" value="CHG5111" onclick="updateSub(this.id)" >
+		  <label for="sem1s1"> Thermodynamics and Electrochemistr</label><br>
+		  <input type="checkbox" id="sem1s2" name="Physical Organic Chemistry" value="CHG5112" onclick="updateSub(this.id)">
+		  <label for="sem1s2">Physical Organic Chemistry</label><br>
+		  <input type="checkbox" id="sem1s3" name="Transition and Inner-Transition Elements" value="CHG5113" onclick="updateSub(this.id)">
+		  <label for="sem1s3"> Transition and Inner-Transition Elements </label><br>
+		  <input type="checkbox" id="sem1s4" name="Analytical Chemistry" value="CHG5114" onclick="updateSub(this.id)">
+		  <label for="sem1s4">Analytical Chemistry</label><br>
+		  <input type="checkbox" id="sem1s5" name="Physical Chemistry Laboratory" value="CHG5115" onclick="updateSub(this.id)">
+		  <label for="sem1s5"> Physical Chemistry Laboratory </label><br>
+		  <br>
+	  </span>
+
+
+      <span id="c"> <h4> Semester 2nd </h4>
+	<input type="checkbox" id="sem2s1" name="Quantum Chemistry" value="CHG5116" onclick="updateSub(this.id)" >
+		  <label for="sem2s1"> Quantum Chemistry</label><br>
+	<input type="checkbox" id="sem2s2" name="Photochemistry and Pericyclic Reactions" value="CHG5117" onclick="updateSub(this.id)">
+		  <label for="sem2s2"> Photochemistry and Pericyclic Reactions</label><br>
+		  <input type="checkbox" id="sem2s3" name=" Organometallic Chemistry" value="CHG5118" onclick="updateSub(this.id)">
+		  <label for="sem2s3">  Organometallic Chemistry  </label><br>
+		  <input type="checkbox" id="sem2s4" name="Instrumentation Techniques in Chemistry " value="CHG5119" onclick="updateSub(this.id)">
+		  <label for="sem2s4"> Instrumentation Techniques in Chemistry</label><br>
+		  <input type="checkbox" id="sem2s5" name="Inorganic Chemistry Laboratory " value="CHG5120" onclick="updateSub(this.id)">
+		  <label for="sem2s5"> Inorganic Chemistry Laboratory  </label><br>
+	  </span>
+
+	  <span id="d"> <h4> Semester 3 </h4>
+		<input type="checkbox" id="sem3s1" name="Chemical Kinetics and Molecular Spectroscopy" value="CHG6121" onclick="updateSub(this.id)" >
+		  <label for="sem3s1"> Chemical Kinetics and M.S </label><br>
+		  <input type="checkbox" id="sem3s2" name="Reaction Mechanism and Retrosynthesis" value="CHG6122" onclick="updateSub(this.id)">
+		  <label for="sem3s2"> Reaction Mechanism and Retrosynthesis </label><br>
+		  <input type="checkbox" id="sem3s3" name="Applied Chemical Analysis" value="CHG6123" onclick="updateSub(this.id)">
+		  <label for="sem3s3"> Applied Chemical Analysis </label><br>
+		  <input type="checkbox" id="sem3s4" name="Solid State Chemistry" value="CHG6124" onclick="updateSub(this.id)">
+		  <label for="sem3s4"> Solid State Chemistry </label><br>
+		  <input type="checkbox" id="sem3s5" name="Organic Chemistry Laboratory" value="CHG6125" onclick="updateSub(this.id)">
+		  <label for="sem3s5"> Organic Chemistry Laboratory </label><br>
+
+		</span>
+
+	  <span id="e"> <h4> Semester 4 </h4>
+		  <input type="checkbox" id="sem4s1" name="elective-I" value="elective-1chem" onclick="updateSub(this.id)" >
+		  <label for="sem4s1"> elective-I </label><br>
+		  <input type="checkbox" id="sem4s2" name="elective-II" value="elective-2chem" onclick="updateSub(this.id)" >
+		  <label for="sem4s2"> elective-II </label><br>
+		  <input type="checkbox" id="sem4s3" name="elective-III" value="elective-chem3" onclick="updateSub(this.id)" >
+		  <label for="sem4s3"> elective-III </label><br>
+		  <input type="checkbox" id="sem4s4" name="Project" value="CHG6151" onclick="updateSub(this.id)" >
+		  <label for="sem4s4"> Project</label><br>
+
+
+	  </span>
+
+	  <br>
+
+	  <button type="submit"  id="b1" > Submit </button>
+
+	</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="MSC-CHEMISTRY.js">
+
+	</script>
+</body>
+
+
+</html>

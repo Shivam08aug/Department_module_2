@@ -1,0 +1,95 @@
+#div1{
+	background-color: mediumblue;
+	height : 15%;
+	width : 100%;
+	border : solid;
+	font-size: 2rem;
+	vertical-align:top ;
+}
+#course{
+	margin-top: 20px;
+	align-content: center;
+	margin-left: 700px;
+	vertical-align: top;
+	display: inline;
+}
+#h21{
+	margin-left: 60px;
+}
+
+#span2{
+	float : right;
+}
+
+#f1{
+	border-width: thick;
+}
+
+span#span1{
+	margin-top: 0px;
+}
+
+span#a{
+	display: inline-block;
+	vertical-align: top;
+	border-width: 40px;
+	margin-left: 60px;
+	margin-right: 20px;
+	
+}
+
+span#b{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 20px;
+	margin-top: 0px;
+	
+}
+
+span#c{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+span#d{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 20px;
+	margin-top: 0px;
+    
+}
+span#e{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 120px;
+	margin-top: 0px;
+}
+
+/*
+span#f{
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 120px;
+	margin-top: 0px;
+}
+
+span#g{
+	display: inline-block;
+    vertical-align: top;
+	margin-right: 60px;
+	margin-left: 80px;
+	
+} 
+*/
+
+button#b1{
+	margin-left: 60px;
+	margin-top: 60px;
+	vertical-align: top;
+}
